@@ -11,8 +11,103 @@
         WindowTransitionsEnabled="False"
         WindowStartupLocation="CenterScreen"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        Title="{Binding WindowTitle}" Height="450" Width="800">
-    <Grid>
-        
+        Title="{Binding WindowTitle}" Height="400" Width="600">
+    <Grid Margin="0,-1,0,1">
+        <Button Content="打开串口" HorizontalAlignment="Left" Margin="27,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <Slider HorizontalAlignment="Left" Height="32" Margin="267,119,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label HorizontalAlignment="Left" Height="25" Margin="374,147,0,0" Content="压力范围" VerticalAlignment="Top" Width="67"/>
+        <Label HorizontalAlignment="Left" Height="23" Margin="419,65,0,0" Content="温度范围" VerticalAlignment="Top" Width="56"/>
+        <Label HorizontalAlignment="Left" Height="25" Margin="342,122,0,0" Content="后轮" VerticalAlignment="Top" Width="56"/>
+        <Slider HorizontalAlignment="Left" Height="34" Margin="437,119,0,0" VerticalAlignment="Top" Width="60"/>
+        <Slider HorizontalAlignment="Left" Height="32" Margin="437,147,0,0" VerticalAlignment="Top" Width="60"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="120" Margin="31,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
+        <Label HorizontalAlignment="Left" Height="26" Margin="40,232,0,0" Content="压力：" VerticalAlignment="Top" Width="50"/>
+        <Label HorizontalAlignment="Left" Height="26" Margin="40,258,0,0" Content="温度：" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="88,234,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="88,260,0,0" VerticalAlignment="Top" Width="48"/>
+        <ComboBox HorizontalAlignment="Left" Margin="192,30,0,0" VerticalAlignment="Top" Width="66">
+            <ComboBoxItem Content="COM1" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="COM2" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="COM3" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="COM4" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="COM5" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="COM6" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="COM7" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="COM8" HorizontalAlignment="Left" Width="93"/>
+        </ComboBox>
+        <Label Content="端口号" HorizontalAlignment="Left" Height="26" Margin="133,32,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.741,0.923"/>
+        <Label Content="波特率
+               " HorizontalAlignment="Left" Height="26" Margin="133,62,0,0" VerticalAlignment="Top" Width="54"/>
+        <ComboBox HorizontalAlignment="Left" Margin="192,62,0,0" VerticalAlignment="Top" Width="66">
+            <ComboBoxItem Content="2400" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="4800" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="9600" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="57600" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="115200" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="230400" HorizontalAlignment="Left" Width="93"/>
+        </ComboBox>
+        <CheckBox Content="语音报警开关" HorizontalAlignment="Left" Margin="40,125,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="数据位" HorizontalAlignment="Left" Height="26" Margin="267,31,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.741,0.923"/>
+        <Label Content="停止位" HorizontalAlignment="Left" Height="26" Margin="267,62,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.741,0.923"/>
+        <ComboBox HorizontalAlignment="Left" Margin="314,62,0,0" VerticalAlignment="Top" Width="66">
+            <ComboBoxItem Content="0" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="93"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="314,31,0,0" VerticalAlignment="Top" Width="66">
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="7" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="6" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="93"/>
+        </ComboBox>
+        <Label Content="奇偶校验" HorizontalAlignment="Left" Height="26" Margin="387,31,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.019,0.577"/>
+        <ComboBox HorizontalAlignment="Left" Margin="455,30,0,0" VerticalAlignment="Top" Width="88">
+            <ComboBoxItem Content="奇校验" HorizontalAlignment="Left" Width="93"/>
+            <ComboBoxItem Content="偶校验" HorizontalAlignment="Left" Width="93"/>
+        </ComboBox>
+        <Button Content="刷新串口" HorizontalAlignment="Left" Margin="27,61,0,0" VerticalAlignment="Top" Width="75"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="121,185,0,0" Stroke="Black" VerticalAlignment="Top" Width="459"/>
+        <Label Content="串口配置" HorizontalAlignment="Left" Height="31" Margin="51,3,0,0" VerticalAlignment="Top" 
+               Width="75" RenderTransformOrigin="0.741,0.923"
+               FontSize="15"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="18,18,0,0" Stroke="Black" VerticalAlignment="Top" Width="35"/>
+        <Grid Margin="0,59,0,-7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="421*"/>
+                <ColumnDefinition Width="169*"/>
+            </Grid.ColumnDefinitions>
+            <Label HorizontalAlignment="Left" Height="26" Margin="207,87,0,0"  Content="压力范围" VerticalAlignment="Top" Width="70"/>
+            <Label HorizontalAlignment="Left" Height="25" Margin="207,63,0,0" Content="温度范围" VerticalAlignment="Top" Width="66"/>
+            <Label HorizontalAlignment="Left" Height="24" Margin="169,63,0,0" Content="前轮" VerticalAlignment="Top" Width="46"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="141,48,0,0" Stroke="Black" VerticalAlignment="Top" Width="439" Grid.ColumnSpan="2"/>
+            <Label Content="传感器配置" HorizontalAlignment="Left" Height="31" Margin="51,34,0,0" VerticalAlignment="Top" 
+                Width="90" RenderTransformOrigin="0.741,0.923"
+                FontSize="15"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="18,48,0,0" Stroke="Black" VerticalAlignment="Top" Width="35"/>
+            <Label HorizontalAlignment="Left" Height="25" Margin="373,63,0,0" Content="温度范围" VerticalAlignment="Top" Width="66" Grid.ColumnSpan="2"/>
+            <Slider HorizontalAlignment="Left" Height="34" Margin="266,87,0,0" VerticalAlignment="Top" Width="60"/>
+        </Grid>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="120" Margin="163,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
+        <Label HorizontalAlignment="Left" Height="26" Margin="172,232,0,0" Content="压力：" VerticalAlignment="Top" Width="50"/>
+        <Label HorizontalAlignment="Left" Height="26" Margin="172,258,0,0" Content="温度：" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="220,234,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="220,260,0,0" VerticalAlignment="Top" Width="48"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="120" Margin="300,200,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
+        <Label HorizontalAlignment="Left" Height="26" Margin="309,230,0,0" Content="压力：" VerticalAlignment="Top" Width="50"/>
+        <Label HorizontalAlignment="Left" Height="26" Margin="309,256,0,0" Content="温度：" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="357,232,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="357,258,0,0" VerticalAlignment="Top" Width="48"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="120" Margin="438,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
+        <Label HorizontalAlignment="Left" Height="26" Margin="447,232,0,0" Content="压力：" VerticalAlignment="Top" Width="50"/>
+        <Label HorizontalAlignment="Left" Height="26" Margin="447,258,0,0" Content="温度：" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="495,234,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="495,260,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.562,0.417"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="121,18,0,0" Stroke="Black" VerticalAlignment="Top" Width="459"/>
+        <Label Content="参数显示" HorizontalAlignment="Left" Height="31" Margin="51,170,0,0" VerticalAlignment="Top" 
+            Width="75" RenderTransformOrigin="0.741,0.923"
+            FontSize="15"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="18,185,0,0" Stroke="Black" VerticalAlignment="Top" Width="35"/>
+        <Button Content="曲线显示" HorizontalAlignment="Left" Margin="27,331,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="参数标定" HorizontalAlignment="Left" Margin="121,331,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Controls:MetroWindow>

@@ -25,3 +25,5 @@ E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debu
 E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debug\TirePressureSensorWpfApp.csproj.CopyComplete
 E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debug\TirePressureSensorWpfApp.exe
 E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debug\TirePressureSensorWpfApp.pdb
+E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debug\PlotWindow.g.cs
+E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debug\PlotWindow.baml
