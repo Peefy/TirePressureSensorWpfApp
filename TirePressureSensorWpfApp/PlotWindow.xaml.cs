@@ -12,12 +12,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using MahApps.Metro.Controls;
+
+using Microsoft.Research.DynamicDataDisplay;
+using Microsoft.Research.DynamicDataDisplay.DataSources;
+using Microsoft.Research.DynamicDataDisplay.Charts.Axes;
+
 namespace TirePressureSensorWpfApp
 {
     /// <summary>
     /// PlotWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class PlotWindow : Window
+    public partial class PlotWindow : MetroWindow
     {
         public PlotWindow()
         {

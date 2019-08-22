@@ -27,3 +27,8 @@ E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debu
 E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debug\TirePressureSensorWpfApp.pdb
 E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debug\PlotWindow.g.cs
 E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\obj\Debug\PlotWindow.baml
+E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\bin\Debug\DynamicDataDisplay.dll
+E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\bin\Debug\DynamicDataDisplay.Maps.dll
+E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\bin\Debug\DynamicDataDisplay.Markers.dll
+E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\bin\Debug\DynamicDataDisplay.Markers2.dll
+E:\xpf\_VSPros\C#\WPF\TirePressureSensorWpfApp\TirePressureSensorWpfApp\bin\Debug\Parser.dll
