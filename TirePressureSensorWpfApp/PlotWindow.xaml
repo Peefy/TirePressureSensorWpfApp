@@ -9,7 +9,8 @@
         WindowTransitionsEnabled="False"
         WindowStartupLocation="CenterScreen"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        Title="曲线显示" Height="470" Width="800">
+        Loaded="MetroWindow_Loaded"
+        Title="曲线显示" Height="470" Width="600">
     <Controls:MetroWindow.Resources>
         <ResourceDictionary>
             <RadialGradientBrush x:Key="ChartPlotterBrush" GradientOrigin="0.6,0.5">
@@ -26,64 +27,42 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
-            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <d3:ChartPlotter
-            x:Name="xplotter"
+            x:Name="templotter"
             Grid.Row="0"
             Grid.Column="0"
             Background="{StaticResource ChartPlotterBrush}">
-            <d3:Header Content="X" Foreground="Black" />
-            <d3:VerticalAxisTitle Content="Value" Foreground="Black" />
-            <d3:HorizontalAxisTitle Content="Time" Foreground="Black" />
+            <d3:Header Content="温度" Foreground="Black" />
+            <d3:VerticalAxisTitle Content="值" Foreground="Black" />
+            <d3:HorizontalAxisTitle Content="时间" Foreground="Black" />
         </d3:ChartPlotter>
         <d3:ChartPlotter
-            x:Name="yplotter"
+            x:Name="preplotter"
             Grid.Row="0"
             Grid.Column="1"
             Background="{StaticResource ChartPlotterBrush}">
-            <d3:Header Content="Y" Foreground="Black" />
-            <d3:VerticalAxisTitle Content="Value" Foreground="Black" />
-            <d3:HorizontalAxisTitle Content="Time" Foreground="Black" />
+            <d3:Header Content="压力" Foreground="Black" />
+            <d3:VerticalAxisTitle Content="值" Foreground="Black" />
+            <d3:HorizontalAxisTitle Content="时间" Foreground="Black" />
         </d3:ChartPlotter>
         <d3:ChartPlotter
-            x:Name="zplotter"
-            Grid.Row="0"
-            Grid.Column="2"
-            Background="{StaticResource ChartPlotterBrush}">
-            <d3:VerticalAxis>
-                <d3:VerticalAxis Foreground="Black" />
-            </d3:VerticalAxis>
-            <d3:Header Content="Z" Foreground="Black" />
-            <d3:VerticalAxisTitle Content="Value" Foreground="Black" />
-            <d3:HorizontalAxisTitle Content="Time" Foreground="Black" />
-        </d3:ChartPlotter>
-        <d3:ChartPlotter
-            x:Name="rollplotter"
+            x:Name="freplotter"
             Grid.Row="1"
             Grid.Column="0"
             Background="{StaticResource ChartPlotterBrush}">
-            <d3:Header Content="Row" Foreground="Black" />
-            <d3:VerticalAxisTitle Content="Value" Foreground="Black" />
-            <d3:HorizontalAxisTitle Content="Time" Foreground="Black" />
+            <d3:Header Content="频率" Foreground="Black" />
+            <d3:VerticalAxisTitle Content="值" Foreground="Black" />
+            <d3:HorizontalAxisTitle Content="时间" Foreground="Black" />
         </d3:ChartPlotter>
         <d3:ChartPlotter
-            x:Name="yawplotter"
+            x:Name="ampplotter"
             Grid.Row="1"
             Grid.Column="1"
             Background="{StaticResource ChartPlotterBrush}">
-            <d3:Header Content="Yaw" Foreground="Black" />
-            <d3:VerticalAxisTitle Content="Value" Foreground="Black" />
-            <d3:HorizontalAxisTitle Content="Time" Foreground="Black" />
-        </d3:ChartPlotter>
-        <d3:ChartPlotter
-            x:Name="pitchplotter"
-            Grid.Row="1"
-            Grid.Column="2"
-            Background="{StaticResource ChartPlotterBrush}">
-            <d3:Header Content="Pitch" Foreground="Black" />
-            <d3:VerticalAxisTitle Content="Value" Foreground="Black" />
-            <d3:HorizontalAxisTitle Content="Time" Foreground="Black" />
+            <d3:Header Content="增益" Foreground="Black" />
+            <d3:VerticalAxisTitle Content="值" Foreground="Black" />
+            <d3:HorizontalAxisTitle Content="时间" Foreground="Black" />
         </d3:ChartPlotter>
     </Grid>
 </Controls:MetroWindow>
